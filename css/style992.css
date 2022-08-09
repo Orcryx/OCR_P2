@@ -1,0 +1,100 @@
+@media screen and (max-width: 992px)
+{
+
+    body 
+    {
+        width: 100%;
+        margin: auto;
+    }
+/**************************************************************
+                         Header
+**************************************************************/
+
+input[type=search]
+{
+    width: 50%;
+    height: 50px; 
+    border : 1px #F2F2F2 solid;
+}
+
+#blocFiltres
+{
+    margin-top: 30px;  
+}
+/**************************************************************
+                         Main
+**************************************************************/
+/*Gérer la section hébergements*/
+#hebergements
+{
+   flex-direction: column-reverse;
+}
+/*Gérer le bloc hébergements*/
+#blocHebergements
+{
+    width: 100%;
+    margin-right: 0px;
+    border-radius: 0;   
+    background-color: transparent;
+}
+.carte
+{
+   width: 95%;
+}
+.carte img
+{
+    height: 250px;
+}
+/*Gérer le bloc populaire*/
+#blocPopulaire
+{
+border-radius: 0; 
+padding: 0 5% 0 5%;   
+}
+
+.cartePopulaire img
+{  
+    height: 200px;
+}
+/*Gérer la section activites*/
+.lieu
+{
+  padding: 2%;
+}
+#galerieActivites
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.solo
+{   
+width: 91%;
+}
+.duo
+{   
+width: 91%;
+margin-bottom: 2%;
+margin-top: 2%;
+}
+.intercalaire 
+{
+    margin-top: 2%;
+}
+.grandeCarteActivites img
+{
+    width: 100%;
+    height: 250px;
+}
+.moyenneCarteActivites img
+{
+    width: 100%;
+    height: 250px;
+
+}
+.petiteCarteActivites img
+{
+    width: 100%;
+    height: 250px;
+}
+}

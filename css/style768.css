@@ -1,0 +1,167 @@
+@media screen and (max-width: 768px)
+{
+
+    p 
+{
+    font-size: 12px;
+}
+.grandFormat
+{
+   font-size: 14px;
+   font-weight: bold;
+}
+h1
+{
+    font-size: 16px;
+   
+}
+/**************************************************************
+                         Header
+**************************************************************/
+#banniere
+{    
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+#banniere img
+{
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+/*Les ancres*/
+#blocAncres
+{
+    width: 100%;
+    margin-top: 10px;
+    gap: 0px;  
+}
+.ligne
+{
+   padding: 10px 0  15px 0 ;
+   width: 50%;
+   padding: 0 15% 2% 15%;
+}
+.ligne:hover
+{
+    border-top : none;
+    border-bottom : 3px #0065FC solid;
+}
+/*La barre de recherche*/
+#blocRechercher
+{
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+input[type=search]
+{
+    width: 50%;
+    height: 50px; 
+    border : 1px #F2F2F2 solid;
+}
+input[type=submit]
+{
+   display: none;  
+}
+.loupe
+{
+    position: absolute;
+    margin-left: 55%;
+    padding: 2px 0 0 1px;
+    display: block; 
+}
+/*Les filtres*/
+#blocFiltres
+{
+   flex-direction: column;
+   justify-content: space-around;
+    margin-top: 30px;
+   
+}
+
+.flexCenter
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.filtre 
+{
+    width: 200px;
+    min-width: 150px;
+    margin-bottom: 2%;
+}
+/**************************************************************
+                         MAIN
+**************************************************************/
+/*Gérer la section hébergements*/
+#blocHebergements
+{
+    background-color: transparent;
+}
+/*Gérer le bloc hébergements*/
+.carte img
+{
+    height: 150px; 
+}
+#articlesHebergements
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+/*Gérer le bloc populaire*/
+.cartePopulaire img
+{
+    height: 150px; 
+}
+#articlesPopulaire
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+#galerieActivites
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center 
+}
+
+/*Gérer la section activites*/
+.grandeCarteActivites img
+{
+    width: 100%;
+    height: 150px;
+}
+.moyenneCarteActivites img
+{
+    width: 100%;
+    height: 150px;
+
+}
+.petiteCarteActivites img
+{
+    width: 100%;
+    height: 150px;
+}
+.intercalaire 
+{
+    margin-top: 2%;
+}
+/**************************************************************
+                         Footer
+**************************************************************/
+footer 
+{
+    padding-left: 5%;
+}
+nav 
+{
+    flex-direction: column;
+
+}
+}

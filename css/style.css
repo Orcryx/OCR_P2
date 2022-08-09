@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*, ::before, ::after 
+{
+    box-sizing: border-box;
+}
+body 
+{
+    width: 90%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    /* border : 3px black solid; */
+    
+}
+a
+{
+    text-decoration: none;
+    color : black;
+}
+p 
+{
+    font-size: 14px;
+    margin-top: -10px;
+}
+.grandFormat
+{
+   font-size: 16px;
+    font-weight: bold;
+}
+h1
+{
+    font-size: 22px;
+}
+h2
+{
+    font-size: 20px;
+}
+h3
+{
+    font-size: 14px;
+    margin-top: 0px;
+}
+header, main, footer
+{
+    width: 100%;
+}
+
+/*Gérer les icones*/
+.fa-solid
+{
+    font-size: 16px;
+    background-color: #DEEBFF ;
+    color: #0065FC;
+    padding: 16px;
+    border-radius: 50%; 
+}
+.fas
+{
+    
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    color:#0065FC ;   
+    border: 1px #F2F2F2 solid;
+}
+
+/**************************************************************
+                         Header
+**************************************************************/
+/*Gérer la banniere*/
+#banniere
+{    
+    display: flex;
+    justify-content: space-between;
+ 
+}
+#banniere img
+{
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 3%;
+}
+/*Gérer les ancres de la banniere*/
+#blocAncres
+{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.ligne
+{
+   top: -20px;
+   width: 50%;
+
+}
+.lien1 
+{   
+    padding: 8% 0 0 10% ; 
+}
+.lien2 
+{   
+    padding: 8% 0 0 15% ; 
+}
+.ligne:hover
+{
+    border-top : 3px #0065FC solid;
+}
+/*Gérer la barre de recherche*/
+#blocRechercher
+{
+    margin: 2% 0 0 3%;
+    gap: 0%;
+}
+#barreRechercher
+{
+    position: relative;
+    display: flex;
+    margin-top: 1%; 
+}
+.fa-location-dot
+{
+    border-radius: 0;
+    height: 50px;
+    margin : 0;
+    border-radius: 10px 0 0 10px;
+    background-color:#F2F2F2;
+    color : black;
+}
+.fa-magnifying-glass
+{
+    height: 50px;
+    border-radius: 25%;
+    color: white;
+    background-color: transparent;   
+}
+input[type=search]
+{  
+    width: 15%;
+    height: 50px; 
+    border : 1px #F2F2F2 solid;
+}
+
+input[type=submit]
+{
+    height: 50px;
+    font-weight: bold;
+    padding: 0 1% 0 1%;
+    border : none;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    background-color: #0065FC; 
+    display: block;
+   
+}
+.loupe
+{
+    height: 50px;
+    border : none;
+    border-radius: 10px;
+    background-color: #0065FC;
+    display: none;
+}
+
+/*Gérer les filtres*/
+#blocFiltres
+{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin: 2% 0 2% 0;
+}
+
+#blocFiltres i
+{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -3px;
+}
+
+.filtre
+{ 
+    position: relative;
+    height: 50px;
+    font-weight: bold;  
+    padding-left: 55px;
+    padding-right: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 25px;
+    border : 1px #F2F2F2 solid;
+}
+.filtre:hover
+{
+    height: 50px;
+    font-weight: bold;
+    background-color: rgba(206, 222, 240, 0.2);
+    border-radius: 25px;
+    border : 1px #DEEBFF  solid;
+
+}  
+/**************************************************************
+                         Main
+**************************************************************/
+
+/*Les blocs de section*/
+#hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#activites, #hebergements
+{
+    padding-left: 2% ;
+    padding-right: 2%;
+}
+/*La section n°1 : hébergements + les populaires*/
+#blocHebergements
+{
+  
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;   
+    padding: 2%;
+    flex: 1; 
+    margin-right: 3%; 
+}
+#articlesHebergements
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-between;
+}
+.voirPlus
+{
+ font-size: 14px;
+ font-weight: bold;
+}
+
+#blocPopulaire
+{
+    
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    border-radius: 25px;
+    padding: 5% 5% 0 5%;
+}
+
+.fa-star
+{
+  
+    font-size: 16px;
+    color : black;
+    background-color: transparent;
+}
+/*La section n°2 : activités*/
+
+#blocActivites
+{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       margin-top: 2%;
+}
+#blocActivites h2
+{
+   padding-left: 2%;   
+}
+#galerieActivites
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;  
+    gap: 2%;
+}
+.solo
+{
+    width: 25%; 
+}
+.duo
+{   width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Les cartes du bloc Hébergements*/
+.carte
+{
+    width: 30%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+.carte p 
+{
+    margin-bottom: 0px;
+}
+
+.carte img
+{
+    width: 100%;
+    min-width: 50px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.carte:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/*Les cartes du bloc Hébergements Populaires*/
+.cartePopulaire
+{
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    padding: 5px 0 5px  5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.cartePopulaire img
+{
+    width: 30%;
+    min-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 25px 0 0 25px;
+}
+.cartePopulaire:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.alignement
+{
+    display: flex; 
+    /* gap: 10px; */
+}
+.titrePop
+{
+    justify-content: space-between;
+}
+.description
+{
+    margin : 0 0 0 10px;
+    position: relative;
+}
+/*La barre de note avec les étoiles*/
+.checked 
+{
+    font-size: 12px;
+    padding: 0px;
+    color: #0065FC;
+}
+ .nochecked 
+{  
+    font-size: 12px;
+    padding: 0px;
+    color: #E2E2E2;
+}
+.noteEtoile
+{
+margin-top: 2px;
+}
+.noteEtoilePop
+{
+    position: absolute;
+    bottom: 0px;
+}
+
+/*Les cartes du bloc Activités*/
+.lieu
+{
+  padding: 4%;
+  margin-bottom: 0%;
+}
+
+.grandeCarteActivites
+{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.grandeCarteActivites img
+{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.grandeCarteActivites:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.moyenneCarteActivites
+{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.moyenneCarteActivites img
+{
+    width: 100%;
+    min-width: 50px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.moyenneCarteActivites:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.petiteCarteActivites
+{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.petiteCarteActivites img
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+.petiteCarteActivites:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/**************************************************************
+                         Footer
+**************************************************************/
+footer
+{    
+    background-color: #F2F2F2;
+    margin-top: 2%;
+    padding-top: 2%;
+}
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    width: 80%;
+    line-height:2.5;   
+}
+nav h3
+{
+margin: 0%;  
+}
+nav ul 
+{
+  margin: 2% 0 0 0;
+}
+nav ul li  
+{
+    list-style-type: none;
+    font-size: 12px;
+    margin-left: -40px;
+}
+
+#aPropos
+{
+    display: flex;
+    flex-direction: column;
+}
+#nosHeb
+{
+    display: flex;
+    flex-direction: column;
+   
+}
+#assistance
+{
+    display: flex;
+    flex-direction: column;
+}
