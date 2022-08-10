@@ -51,7 +51,7 @@ h1
 /*La barre de recherche*/
 #blocRechercher
 {
-    margin-top: 20px;
+    margin-top: 4%;
     flex-wrap: wrap;
 }
 input[type=search]

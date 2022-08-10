@@ -73,7 +73,7 @@ header, main, footer
     justify-content: space-between;
  
 }
-#banniere img
+#banniere a img
 {
   width: 150px;
   height: auto;
