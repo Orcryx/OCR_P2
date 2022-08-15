@@ -91,7 +91,7 @@ header, main, footer
 {
    top: -20px;
    width: 50%;
-
+   border-top : 3px transparent solid;
 }
 .lien1 
 {   
