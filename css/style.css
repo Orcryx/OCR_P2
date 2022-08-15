@@ -104,6 +104,7 @@ header, main, footer
 .ligne:hover
 {
     border-top : 3px #0065FC solid;
+    color : #0065FC ;
 }
 /*Gérer la barre de recherche*/
 #blocRechercher
