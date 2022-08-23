@@ -27,6 +27,7 @@ input[type=search]
 /*Gérer la section hébergements*/
 #hebergements
 {
+    padding: 0;
    flex-direction: column-reverse;
 }
 /*Gérer le bloc hébergements*/
